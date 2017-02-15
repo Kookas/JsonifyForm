@@ -8,6 +8,7 @@ For example, you could make a page for bulk-modifying some People entities, with
 First, declare ```data-jsonify``` on your form. Then, for each input you wish to jsonify, declare the string ```data-jsonify-name``` and the array ```data-jsonify-group```.
 
 In the example above, the name inputs might look something like this: 
+
 ```<input type="text" data-jsonify-name="people" data-jsonify-group="[{{ Person.id }}, 'name']" />```
 
 Each subsequent of the Jsonify group is a layer deeper within the resulting JSON and refers to the key for that layer.
